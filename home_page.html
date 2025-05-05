@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Class Activities - Home</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  
+  <nav>
+    <ul>
+      <li><a href="home_page.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  
+  <section id="audio-box">
+    <h2>Audio Commands</h2>
+    <button id="start-voice">Audio On</button>
+    <button id="stop-voice">Audio Off</button>
+  </section>
+
+ 
+  <main>
+    <h1>Welcome to Class Activities!</h1>
+    <p id="quote">Loading quote...</p>
+    <div class="buttons">
+      <button onclick="location.href='stocks.html'">Go to Stocks</button>
+      <button onclick="location.href='dogs.html'">Go to Dogs</button>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

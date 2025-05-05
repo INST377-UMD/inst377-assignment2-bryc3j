@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Class Activities - Stocks</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  
+  <nav>
+    <ul>
+      <li><a href="home_page.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  
+  <section id="audio-box">
+    <h2>Audio Commands</h2>
+    <button id="start-voice">Audio On</button>
+    <button id="stop-voice">Audio Off</button>
+  </section>
+
+  
+  <main>
+    <h1>Stock Lookup</h1>
+    <label for="ticker">Enter Ticker Symbol:</label>
+    <input type="text" id="ticker" placeholder="e.g. AAPL" />
+    
+    <label for="range">Select Range:</label>
+    <select id="range">
+      <option value="30">30 Days</option>
+      <option value="60">60 Days</option>
+      <option value="90">90 Days</option>
+    </select>
+    
+    <button id="loadChart">Load Chart</button>
+    <canvas id="stockChart"></canvas>
+
+    <h2>Top 5 Reddit Stocks</h2>
+    <table border="1" id="redditStocks">
+      <thead>
+        <tr>
+          <th>Stock</th>
+          <th>Mentions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="stocks.js"></script>
+</body>
+</html>
